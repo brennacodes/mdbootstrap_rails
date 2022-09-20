@@ -22,11 +22,7 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-<<<<<<< HEAD
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
-=======
-  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
@@ -35,32 +31,19 @@ Rails.application.configure do
   config.assets.compile = false
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-<<<<<<< HEAD
   # config.asset_host = "http://assets.example.com"
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for Apache
   # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # for NGINX
-=======
-  # config.asset_host = 'http://assets.example.com'
-
-  # Specifies the header that your server uses for sending files.
-  # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
-  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
-<<<<<<< HEAD
   # config.action_cable.url = "wss://example.com/cable"
   # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
-=======
-  # config.action_cable.url = 'wss://example.com/cable'
-  # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -77,11 +60,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-<<<<<<< HEAD
   # config.active_job.queue_name_prefix = "mdbootstrap_rails_production"
-=======
-  # config.active_job.queue_name_prefix = "mdb_rails_production"
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   config.action_mailer.perform_caching = false
 
@@ -93,10 +72,9 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
-<<<<<<< HEAD
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
-=======
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
@@ -105,18 +83,13 @@ Rails.application.configure do
 
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
   # Use a different logger for distributed setups.
   # require "syslog/logger"
-<<<<<<< HEAD
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
-=======
-  # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
@@ -126,8 +99,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-<<<<<<< HEAD
-=======
 
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
@@ -149,5 +120,4 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 end
