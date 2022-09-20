@@ -60,7 +60,6 @@ m = Module.new do
     Regexp.last_match(1)
   end
 
-<<<<<<< HEAD
   def bundler_requirement
     @bundler_requirement ||=
       env_var_version || cli_arg_version ||
@@ -75,22 +74,6 @@ m = Module.new do
     requirement = bundler_gem_version.approximate_recommendation
 
     return requirement unless Gem.rubygems_version < Gem::Version.new("2.7.0")
-=======
-  def bundler_version
-    @bundler_version ||=
-      env_var_version || cli_arg_version ||
-        lockfile_version
-  end
-
-  def bundler_requirement
-    return "#{Gem::Requirement.default}.a" unless bundler_version
-
-    bundler_gem_version = Gem::Version.new(bundler_version)
-
-    requirement = bundler_gem_version.approximate_recommendation
-
-    return requirement unless Gem::Version.new(Gem::VERSION) < Gem::Version.new("2.7.0")
->>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 
     requirement += ".a" if bundler_gem_version.prerelease?
 
