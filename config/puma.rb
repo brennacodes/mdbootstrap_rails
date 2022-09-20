@@ -39,5 +39,9 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 #
 # preload_app!
 
+<<<<<<< HEAD
 # Allow puma to be restarted by `bin/rails restart` command.
+=======
+# Allow puma to be restarted by `rails restart` command.
+>>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 plugin :tmp_restart

@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
+<<<<<<< HEAD
 APP_PATH = File.expand_path("../config/application", __dir__)
+=======
+load File.expand_path("spring", __dir__)
+APP_PATH = File.expand_path('../config/application', __dir__)
+>>>>>>> 4892209c91d4f8e8df84de74ca3cbaa781bc3e85
 require_relative "../config/boot"
 require "rails/commands"
